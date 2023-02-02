@@ -13,7 +13,7 @@ export default function Result({ params }: { params: Params }) {
     <div className='flex gap-x-8'>
       <span>You picked {userPick}.</span>
       <span>Computer picked {computerPick}.</span>
-      <span>Result = {result}</span>
+      <h1>You {result}.</h1>
     </div>
   )
 }

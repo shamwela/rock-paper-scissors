@@ -7,6 +7,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className='flex gap-x-8'>
+      <h1>Pick one</h1>
       <Link href='/result/Rock'>
         <Image alt='Rock' src={Rock} className='cursor-pointer' />
       </Link>
