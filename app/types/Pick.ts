@@ -1,1 +1,1 @@
-export type Pick = 'Rock' | 'Paper' | 'Scissors'
+export type Pick = 'rock' | 'paper' | 'scissors'

@@ -1,34 +1,34 @@
 import type { Pick } from 'app/types/Pick'
 
 export function getResult(userPick: Pick, computerPick: Pick) {
-  if (userPick === 'Rock') {
+  if (userPick === 'rock') {
     switch (computerPick) {
-      case 'Rock':
-        return 'Drew'
-      case 'Paper':
-        return 'Lost'
-      case 'Scissors':
-        return 'Won'
+      case 'rock':
+        return 'drew'
+      case 'paper':
+        return 'lost'
+      case 'scissors':
+        return 'won'
     }
   }
-  if (userPick === 'Paper') {
+  if (userPick === 'paper') {
     switch (computerPick) {
-      case 'Rock':
-        return 'Won'
-      case 'Paper':
-        return 'Drew'
-      case 'Scissors':
-        return 'Lost'
+      case 'rock':
+        return 'won'
+      case 'paper':
+        return 'drew'
+      case 'scissors':
+        return 'lost'
     }
   }
-  if (userPick === 'Scissors') {
+  if (userPick === 'scissors') {
     switch (computerPick) {
-      case 'Rock':
-        return 'Lost'
-      case 'Paper':
-        return 'Won'
-      case 'Scissors':
-        return 'Drew'
+      case 'rock':
+        return 'lost'
+      case 'paper':
+        return 'won'
+      case 'scissors':
+        return 'drew'
     }
   }
   throw new Error('The userPick should be Rock, Paper, or Scissors.')

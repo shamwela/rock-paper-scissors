@@ -10,4 +10,8 @@
   h1 {
     @apply text-3xl font-medium;
   }
+
+  a {
+    @apply text-blue-500 hover:underline;
+  }
 }
