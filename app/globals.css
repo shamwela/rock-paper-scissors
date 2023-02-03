@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply p-4;
+    @apply p-8;
   }
 
   h1 {

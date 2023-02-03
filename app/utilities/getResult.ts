@@ -10,8 +10,7 @@ export function getResult(userPick: Pick, computerPick: Pick) {
       case 'scissors':
         return 'won'
     }
-  }
-  if (userPick === 'paper') {
+  } else if (userPick === 'paper') {
     switch (computerPick) {
       case 'rock':
         return 'won'
@@ -20,8 +19,8 @@ export function getResult(userPick: Pick, computerPick: Pick) {
       case 'scissors':
         return 'lost'
     }
-  }
-  if (userPick === 'scissors') {
+  } else {
+    // User pick is scissors
     switch (computerPick) {
       case 'rock':
         return 'lost'
