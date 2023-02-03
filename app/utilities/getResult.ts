@@ -31,5 +31,4 @@ export function getResult(userPick: Pick, computerPick: Pick) {
         return 'drew'
     }
   }
-  throw new Error('The userPick should be Rock, Paper, or Scissors.')
 }

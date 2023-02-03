@@ -1,12 +1,13 @@
-import type { Pick } from 'app/types/Pick'
 import { getRandomPick } from 'app/utilities/getRandomPick'
 import { getResult } from 'app/utilities/getResult'
 import Link from 'next/link'
+import { Error } from 'app/components/Error'
 
-type Params = { userPick: Pick }
-
-export default function Result({ params }: { params: Params }) {
+export default function Result({ params }: { params: any }) {
   const { userPick } = params
+  if (userPick !== 'rock' && userPick !== 'paper' && userPick !== 'scissors') {
+    return <Error message='Invalid user pick.' />
+  }
   const computerPick = getRandomPick()
   const result = getResult(userPick, computerPick)
 
