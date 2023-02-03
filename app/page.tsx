@@ -7,11 +7,11 @@ import { getRandomPick } from './utilities/getRandomPick'
 import { getResult } from './utilities/getResult'
 import type { Pick } from './types/Pick'
 import { useState } from 'react'
+import type { Result } from './types/Result'
 
 export default function Home() {
   const [userPick, setUserPick] = useState<Pick>()
   const [computerPick, setComputerPick] = useState<Pick>()
-  type Result = 'won' | 'drew' | 'lost'
   const [result, setResult] = useState<Result>()
 
   function handlePick(userPick: Pick) {

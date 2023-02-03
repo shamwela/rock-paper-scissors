@@ -20,7 +20,7 @@ export function getResult(userPick: Pick, computerPick: Pick) {
         return 'lost'
     }
   } else {
-    // User pick is scissors
+    // Here, user pick is scissors
     switch (computerPick) {
       case 'rock':
         return 'lost'
