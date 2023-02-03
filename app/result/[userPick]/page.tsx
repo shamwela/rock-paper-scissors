@@ -1,9 +1,8 @@
+'use client'
 import { getRandomPick } from 'app/utilities/getRandomPick'
 import { getResult } from 'app/utilities/getResult'
 import Link from 'next/link'
 import { Error } from 'app/components/Error'
-
-export const dynamic = 'force-dynamic'
 
 export default function Result({ params }: { params: any }) {
   const { userPick } = params
